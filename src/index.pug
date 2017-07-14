@@ -1,6 +1,111 @@
 extends layouts/app
 block content
-  .hero.is-medium.is-primary
-      .hero-body
+  .hero.is-fullheight#main
+    .hero-head
+      header.nav
         .container
-          h1.title Pug
+          .nav-left
+            a(href="").nav-item
+              img(src="assets/images/nav-logo.png", alt="logotipo")
+          .nav-right
+            .nav-item
+              .contact-item
+                a(href="") Fale com um
+                  |
+                  |
+                  span corretor
+    .hero-body.has-text-centered
+      .container
+        h1.title.is-super O Maior e 
+          br
+          | mais moderno
+        h2.subtitle.is-super Prédio de Poá
+    .hero-foot.has-text-centered
+      .scroll-down
+        img(src="assets/images/mouse.png", alt="view more")
+  section.section#resources
+    .columns
+      .column.is-three-quarters.is-offset-2
+        .columns.is-multiline
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+          .column.is-3
+            | Lorem
+  section.section.has-text-centered#gallery
+    h1.title Galeria de fotos
+    img(src="http://placehold.it/150x150", alt="")
+    img(src="http://placehold.it/150x150", alt="")
+    img(src="http://placehold.it/150x150", alt="")
+    img(src="http://placehold.it/150x150", alt="")
+    img(src="http://placehold.it/150x150", alt="")
+    img(src="http://placehold.it/150x150", alt="")
+    img(src="http://placehold.it/150x150", alt="")
+  .hero#media
+    .hero-body  
+      .container
+        .columns
+          .column.has-text-centered
+            h2.subtitle Excelente para investir
+            h1.title Perfeito para morar
+            .content
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam eos, similique quisquam quo. Adipisci, sed nisi rerum quam, labore sequi alias eos. Architecto, commodi sunt consequatur quos unde necessitatibus!
+          .column
+            img(src="http://placehold.it/600x380", alt="")
+  .hero#location
+    .columns.is-gapless
+      .column
+        .tabs.is-right.is-boxed
+          ul
+            li.is-active
+              a(href="") 2 Dormitórios
+            li
+              a(href="") 3 Dormitórios
+        .tabs-content
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolores deleniti non placeat nam in voluptas iste at consectetur culpa. Ea alias reprehenderit nemo incidunt iste error eveniet, quidem aliquam.
+          p.is-hidden Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores velit, quaerat ipsa beatae harum mollitia distinctio. Vel illo explicabo autem quia odit temporibus corporis ratione deleniti! Adipisci, molestias, illum.
+      .column
+        img(src="http://placehold.it/800x650", alt="").image
+  section.section#contact
+    .columns
+      .column.is-10.is-offset-1
+        .columns
+          .column.has-text-centered.is-7
+            h2.subtitle Formulário para
+            h1.title Contato
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo soluta, magnam voluptatum consectetur maxime asperiores, assumenda voluptate, rem vero repellat consequatur ab eius iste! Consectetur veniam, rem atque sunt consequuntur.
+          .column.is-5
+            form(action="")
+              .field
+                p.control
+                  input(type="text", placeholder="Nome").input
+              .field
+                p.control
+                  input(type="text", placeholder="Telefone").input
+              .field
+                p.control
+                  input(type="text", placeholder="Email").input
+              .field
+                p.has-text-right
+                  button(type="submit").button.is-white Enviar
+  
+            

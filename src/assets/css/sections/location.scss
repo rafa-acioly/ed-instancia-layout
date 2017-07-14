@@ -1,0 +1,34 @@
+#location {
+
+  .columns {
+
+    .column:first-child {
+      padding: 2rem;
+
+      .tabs {
+
+        ul {
+
+          li {
+            font-size: 1.5em;
+            font-family: 'hk_groteskbold';
+          }
+
+          li.is-active {
+
+            a {
+              color: $blue;
+            }
+          }
+
+          li:not(.is-active) {
+            
+            a {
+              color: transparentize($light-gray, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,39 @@
 @import 'node_modules/bulma/bulma';
+@import './_fonts';
+@import './_variables';
+@import './sections/main';
+@import './sections/resources';
+@import './sections/gallery';
+@import './sections/media';
+@import './sections/location';
+@import './sections/contact';
+
+.title,
+.subtitle {
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'marlenregular';
+
+  &.is-super {
+    font-size: 8.5em;
+    color: white;
+  }
+}
+
+.subtitle {
+  font-family: 'hk_grotesklight';
+  letter-spacing: 5px;
+
+  &.is-super {
+    font-size: 2em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+p {
+  font-family: 'hk_grotesklight';
+}

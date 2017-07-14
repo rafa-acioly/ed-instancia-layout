@@ -1,0 +1,34 @@
+#contact {
+  background-color: $light-green;
+
+  .columns {
+
+    .column:last-child {
+
+      .button {
+        padding: 0 2em;
+        border-radius: 50px;
+      }
+
+      .title,
+      .subtitle,
+      p {
+        color: white;
+      }
+
+      .title {
+        font-size: 8em;
+      }
+
+      .input {
+        background-color: transparent;
+        border-radius: 0;
+
+        &::placeholder {
+          color: white;
+          font-family: 'hk_grotesklight';
+        }
+      }
+    }
+  }
+}

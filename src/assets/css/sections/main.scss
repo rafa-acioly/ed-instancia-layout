@@ -1,0 +1,53 @@
+#main {
+  background: url('https://source.unsplash.com/user/erondu/1920x800') center center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+
+  .nav {
+    height: $default-nav-height + 1.5;
+    background-color: white;
+  }
+}
+
+.nav-item {
+
+  img {
+    max-height: $default-brand-size + 1.5;
+  }
+
+  .contact-item {
+    background-color: $blue;
+    border-radius: 50px;
+    padding: .2em .5em;
+    text-transform: uppercase;
+
+    a,
+    span {
+      color: white;
+
+      &:hover {
+        color: white;
+      }
+    }
+    
+    a {
+      font-family: 'hk_grotesklight';
+    }
+
+    span {
+      font-family: 'hk_groteskbold';
+    }
+  }
+}
+
+.scroll-down {
+  background-color: white;
+  margin: 0 1em 0 0;
+  height: 51px;
+  width: $size * 2;
+  border-top-left-radius: $size * 2;
+  border-top-right-radius: $size * 2;
+  margin: 0 auto;
+}
