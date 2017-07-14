@@ -3,6 +3,7 @@ var HtmlWebPackPlugin = require('html-webpack-plugin');
 var webpack = require("webpack");
 var path = require("path");
 
+var isProduction = process.env.NODE_ENV === 'production';
 var cssDev = ['style-loader', 'css-loader', 'sass-loader'];
 var cssProd = ExtractTextPlugin.extract({
   fallback: 'style-loader',
@@ -10,7 +11,7 @@ var cssProd = ExtractTextPlugin.extract({
   publicPath: '/dist'
 });
 
-cssConfig = process.env.NODE_ENV === 'production' ? cssProd : cssDev;
+cssConfig = isProduction ? cssProd : cssDev;
 
 module.exports = {
     entry: './src/entry.js',
