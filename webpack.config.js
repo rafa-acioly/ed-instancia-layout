@@ -22,6 +22,13 @@ module.exports = {
     module: {
       rules: [
         {
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          use: [
+            'file-loader?name=images/[hash].[ext]',
+            'image-webpack-loader'
+          ]
+        },
+        {
           test: /\.scss$/,
           use: cssConfig
         },
