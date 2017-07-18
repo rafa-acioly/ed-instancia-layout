@@ -35,5 +35,49 @@
 }
 
 p {
-  font-family: 'hk_grotesklight';
+  font-family: 'hk_groteskmedium';
+}
+
+figure {
+
+  figcaption {
+    color: $blue;
+    font-family: 'hk_grotesklight';
+  }
+}
+
+.footer {
+  padding: 2rem;
+  background-color: white;
+
+  .columns {
+
+    .column {
+      
+      p,
+      strong,
+      small,
+      p strong {
+        color: $deep-blue;
+      }
+    }
+
+    .column:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+.created-by {
+  padding: .5rem;
+
+  a {
+    color: #4a4a4a;
+  }
 }

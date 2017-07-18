@@ -25,32 +25,16 @@ block content
         img(src="assets/images/mouse.png", alt="view more")
   section.section#resources
     .columns
-      .column.is-three-quarters.is-offset-2
+      .column.is-8.is-offset-2
         .columns.is-multiline
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
-          .column.is-3
-            | Lorem
+          -var qtd = {1: 'Varanda Gourmet', 2: 'Playground', 3: 'Salão Gourmet', 4: 'Solário', 5: 'Brinquedoteca', 6: 'Churrascaria', 7: 'Garagem', 8: 'Espaço Esportivo', 9: 'Piscina Infantil e Adulta', 10: 'Vestiários', 11: 'Academia', 12: 'Pet Plat'}
+          for caption, index in qtd
+            .column.is-2
+              figure.has-text-centered
+                img(src="assets/images/ICONE-"+index+".png", alt="")
+                figcaption
+                  =caption
+
   section.section.has-text-centered#gallery
     h1.title Galeria de fotos
     img(src="http://placehold.it/150x150", alt="")
@@ -68,7 +52,8 @@ block content
             h2.subtitle Excelente para investir
             h1.title Perfeito para morar
             .content
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam eos, similique quisquam quo. Adipisci, sed nisi rerum quam, labore sequi alias eos. Architecto, commodi sunt consequatur quos unde necessitatibus!
+              p Com uma ótima localização no centro cidade, você desfruta de todo o conforto, segurança e praticidade de ter um apartamento próprio de alta qualidade.
+              p Não perca a oportunidade de fazer o melhor investimento para você e sua família. Compre seu apartamento na planta e garanta o futuro dos seus sonhos!
           .column
             img(src="http://placehold.it/600x380", alt="")
   .hero#location
@@ -84,7 +69,7 @@ block content
           p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolores deleniti non placeat nam in voluptas iste at consectetur culpa. Ea alias reprehenderit nemo incidunt iste error eveniet, quidem aliquam.
           p.is-hidden Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores velit, quaerat ipsa beatae harum mollitia distinctio. Vel illo explicabo autem quia odit temporibus corporis ratione deleniti! Adipisci, molestias, illum.
       .column
-        img(src="http://placehold.it/800x650", alt="").image
+        iframe(src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1293.3496117989725!2d-46.34072215800369!3d-23.52728220433437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua+Pref.+Francisco+Rodrigues+Filho%2C+323+-+centro+-+poa+-+sp!5e0!3m2!1spt-BR!2sbr!4v1500320031028", frameborder="0", width="800", height="450", allowfullscreen)
   section.section#contact
     .columns
       .column.is-10.is-offset-1
@@ -107,5 +92,24 @@ block content
               .field
                 p.has-text-right
                   button(type="submit").button.is-white Enviar
-  
-            
+  footer.footer
+    .container
+      .columns
+        .column
+          p 
+            small O edifício não será entregue com móveis e equipamentos, são apenas ilustrações para visualização dos espaços. 
+          p 
+            small Registro da Incorporação registrado sob nº 04 da Matrícula 84.987 do CRI Poá/SP
+        .column
+          figure
+            img(src="assets/images/perez-imoveis.png", alt="logotipo construtora").image
+          p 
+            strong 11 4634.9300 
+            | | perez@perez.imb.br | perezimoveis.imb.br 
+            br
+            strong Incorporação e Vendas Perez Imóveis - CRECI 21.379-J
+  .created-by.has-text-centered
+    a(href="//agfmartins.com.br", target="_blank")
+      img(src="assets/images/fmartins.png", alt="logotipo F martins") 
+      |
+      | F|Martins Comunicação Integrada
