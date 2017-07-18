@@ -5,6 +5,15 @@
     .column:first-child {
       padding: 2rem;
 
+      .tabs-content {
+
+        .button {
+          border-radius: 100px;
+          background-color: $blue;
+          margin-top: 1rem;
+        }
+      }
+
       .tabs {
 
         ul {
