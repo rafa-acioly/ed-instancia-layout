@@ -8,6 +8,10 @@
 @import './sections/location';
 @import './sections/contact';
 
+#map {
+  height: 100%;
+}
+
 .title,
 .subtitle {
   text-transform: uppercase;

@@ -61,15 +61,21 @@ block content
       .column
         .tabs.is-right.is-boxed
           ul
-            li.is-active
-              a(href="") 2 Dormitórios
-            li
-              a(href="") 3 Dormitórios
-        .tabs-content
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolores deleniti non placeat nam in voluptas iste at consectetur culpa. Ea alias reprehenderit nemo incidunt iste error eveniet, quidem aliquam.
-          p.is-hidden Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores velit, quaerat ipsa beatae harum mollitia distinctio. Vel illo explicabo autem quia odit temporibus corporis ratione deleniti! Adipisci, molestias, illum.
+            li(data-tab="1").is-active.has-text-right
+              h1.title.is-4 2 Dormitórios
+              h2.subtitle 63,
+                .sup 49m²
+            li(data-tab="2").has-text-right
+              h1.title.is-4 3 Dormitórios
+              h2.subtitle.is-5 70,
+                .sup 25m²
+        .tabs-content.has-text-centered
+          p(data-content="1")
+            img(src="assets/images/2-dormitorios.png", alt=" ilustraçã planta imovel 2 dormitórios").image
+          p(data-content="2").is-hidden
+            img(src="assets/images/3-dormitorios.png", alt="ilustracao planta imovel 3 dormitórios").image
       .column
-        iframe(src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1293.3496117989725!2d-46.34072215800369!3d-23.52728220433437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua+Pref.+Francisco+Rodrigues+Filho%2C+323+-+centro+-+poa+-+sp!5e0!3m2!1spt-BR!2sbr!4v1500320031028", frameborder="0", width="800", height="450", allowfullscreen)
+        #map
   section.section#contact
     .columns
       .column.is-10.is-offset-1
@@ -97,7 +103,7 @@ block content
       .columns
         .column
           p 
-            small O edifício não será entregue com móveis e equipamentos, são apenas ilustrações para visualização dos espaços. 
+            small O edifício não será entregue com móveis e equipamentos, são apenas ilustrações para visualização dos espaços.
           p 
             small Registro da Incorporação registrado sob nº 04 da Matrícula 84.987 do CRI Poá/SP
         .column
@@ -113,3 +119,4 @@ block content
       img(src="assets/images/fmartins.png", alt="logotipo F martins") 
       |
       | F|Martins Comunicação Integrada
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g6mtFvJjZUirNL0IO7KL4ggVzZIOi3c")

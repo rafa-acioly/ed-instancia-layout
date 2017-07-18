@@ -12,18 +12,38 @@
           li {
             font-size: 1.5em;
             font-family: 'hk_groteskbold';
+            cursor: pointer;
+            margin: 0 .5em;
+
+            .title,
+            .subtitle {
+              color: $blue;
+              font-family: 'hk_groteskbold';
+            }
+
+            .subtitle {
+              font-family: 'hk_grotesklight';
+              text-transform: lowercase;
+              letter-spacing: 0;
+              display: flex;
+              justify-content: flex-end;
+
+              .sup {
+                font-size: 1rem;
+              }
+            }
           }
 
           li.is-active {
 
-            a {
-              color: $blue;
+            .subtitle {
+              color: #66b0a3;
             }
           }
 
           li:not(.is-active) {
-            
-            a {
+
+            .title, .subtitle {
               color: transparentize($light-gray, 0.1);
             }
           }
