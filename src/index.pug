@@ -23,106 +23,13 @@ block content
     .hero-foot.has-text-centered
       .scroll-down
         img(src="assets/images/mouse.png", alt="view more")
-  section.section#resources
-    .columns
-      .column.is-8.is-offset-2
-        .columns.is-multiline
-          -var qtd = {1: 'Varanda Gourmet', 2: 'Playground', 3: 'Salão Gourmet', 4: 'Solário', 5: 'Brinquedoteca', 6: 'Churrascaria', 7: 'Garagem', 8: 'Espaço Esportivo', 9: 'Piscina Infantil e Adulta', 10: 'Vestiários', 11: 'Academia', 12: 'Pet Plat'}
-          for caption, index in qtd
-            .column.is-2
-              figure.has-text-centered
-                img(src="assets/images/ICONE-"+index+".png", alt="")
-                figcaption
-                  =caption
+  
+  include sections/resources
 
-  section.section.has-text-centered#gallery
-    h1.title Galeria de fotos
-    img(src="http://placehold.it/150x150", alt="")
-    img(src="http://placehold.it/150x150", alt="")
-    img(src="http://placehold.it/150x150", alt="")
-    img(src="http://placehold.it/150x150", alt="")
-    img(src="http://placehold.it/150x150", alt="")
-    img(src="http://placehold.it/150x150", alt="")
-    img(src="http://placehold.it/150x150", alt="")
-  .hero#media
-    .hero-body  
-      .container
-        .columns
-          .column.has-text-centered
-            h2.subtitle Excelente para investir
-            h1.title Perfeito para morar
-            .content
-              p Com uma ótima localização no centro cidade, você desfruta de todo o conforto, segurança e praticidade de ter um apartamento próprio de alta qualidade.
-              p Não perca a oportunidade de fazer o melhor investimento para você e sua família. Compre seu apartamento na planta e garanta o futuro dos seus sonhos!
-          .column
-            img(src="http://placehold.it/600x380", alt="")
-  .hero#location
-    .columns.is-gapless
-      .column
-        .tabs.is-right.is-boxed
-          ul
-            li(data-tab="1").is-active.has-text-right
-              h1.title.is-4 2 Dormitórios
-              h2.subtitle 63,
-                .sup 49m²
-            li(data-tab="2").has-text-right
-              h1.title.is-4 3 Dormitórios
-              h2.subtitle.is-5 70,
-                .sup 25m²
-        .tabs-content.has-text-centered
-          p(data-content="1")
-            img(src="assets/images/2-dormitorios.png", alt=" ilustraçã planta imovel 2 dormitórios").image
-            button.button.is-info
-              span.icon
-                i.fa.fa-search-plus
-          p(data-content="2").is-hidden
-            img(src="assets/images/3-dormitorios.png", alt="ilustracao planta imovel 3 dormitórios").image
-            button.button.is-info
-              span.icon
-                i.fa.fa-search-plus
-      .column
-        #map
-  section.section#contact
-    .columns
-      .column.is-10.is-offset-1
-        .columns
-          .column.has-text-centered.is-7
-            h2.subtitle Formulário para
-            h1.title Contato
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo soluta, magnam voluptatum consectetur maxime asperiores, assumenda voluptate, rem vero repellat consequatur ab eius iste! Consectetur veniam, rem atque sunt consequuntur.
-          .column.is-5
-            form(action="")
-              .field
-                p.control
-                  input(type="text", placeholder="Nome").input
-              .field
-                p.control
-                  input(type="text", placeholder="Telefone").input
-              .field
-                p.control
-                  input(type="text", placeholder="Email").input
-              .field
-                p.has-text-right
-                  button(type="submit").button.is-white Enviar
-  footer.footer
-    .container
-      .columns
-        .column
-          p 
-            small O edifício não será entregue com móveis e equipamentos, são apenas ilustrações para visualização dos espaços.
-          p 
-            small Registro da Incorporação registrado sob nº 04 da Matrícula 84.987 do CRI Poá/SP
-        .column
-          figure
-            img(src="assets/images/perez-imoveis.png", alt="logotipo construtora").image
-          p 
-            strong 11 4634.9300 
-            | | perez@perez.imb.br | perezimoveis.imb.br 
-            br
-            strong Incorporação e Vendas Perez Imóveis - CRECI 21.379-J
-  .created-by.has-text-centered
-    a(href="//agfmartins.com.br", target="_blank")
-      img(src="assets/images/fmartins.png", alt="logotipo F martins") 
-      |
-      | F|Martins Comunicação Integrada
-  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9g6mtFvJjZUirNL0IO7KL4ggVzZIOi3c")
+  include sections/gallery
+
+  include sections/location
+
+  include sections/contact
+  
+  include sections/footer
