@@ -20,6 +20,7 @@
     "webpack": "^3.2.0"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
     "html-webpack-plugin": "^2.29.0",
