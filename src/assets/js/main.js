@@ -18,16 +18,12 @@ $(document).ready(function () {
     event.preventDefault();
     // tabs to toggle "is-active" class.
     const tabs = $('.tabs ul li');
-
     // current tab clicked
     const it = $(this);
-
     // current data attribute
     const thisdata = it.data('tab');
-
     // get all contents
     const contents = $('.tabs-content p[data-content]');
-
     /**
      * Loop over all contents, if it is not the 
      * same data attribute then hide.
@@ -39,11 +35,17 @@ $(document).ready(function () {
         element.classList.remove('is-hidden');
       }
     });
-
     // Toggle class from another tabs that is not the clicked one.
     tabs.not(it).removeClass('is-active');
-
     // add active class to clicked
     it.addClass('is-active');
+  });
+
+  $('a[href="#contact"').on('click', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $('#contact').offset().top
+    }, 1000);
   });
 });
