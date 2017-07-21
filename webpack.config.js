@@ -54,7 +54,7 @@ module.exports = {
 
     plugins: [
       new HtmlWebPackPlugin({
-        title: 'Edificio Instancia',
+        title: 'Edificio Estância',
         hash: true,
         template: './src/index.pug'
       }),
