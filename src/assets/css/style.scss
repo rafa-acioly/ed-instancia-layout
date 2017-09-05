@@ -53,8 +53,10 @@ figure {
 
 // Configuração do mini-box flutuante da imobiliaria perez
 .logo-float {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  padding: 15px;
+  padding: 10px;
   z-index: 11;
   right: 0;
   top: 8vh;
@@ -62,6 +64,8 @@ figure {
   text-align: center;
   background-color: #fff;
   box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.36);
+
+  transition: all .5s ease;
 
   a {
     color: $deep-blue;

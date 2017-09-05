@@ -21,6 +21,14 @@ $(document).ready(function () {
       scrollTop: $('#contact').offset().top
     }, 1000);
   });
+
+  $('.logo-float .fa').on('click', function() {
+    const $this = $(this);
+    let classe = $(this).hasClass('fa-close');
+    $('.logo-float img, .logo-float p').fadeToggle('fast', function () {
+      $this.toggleClass('fa-angle-left', classe).toggleClass('fa-close', !classe);
+    });
+  });
   
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
