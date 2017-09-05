@@ -1,11 +1,52 @@
 section.section#resources
-  .columns
-    .column.is-8.is-offset-2
-      .columns.is-multiline
-        -var qtd = {1: 'Varanda Gourmet', 2: 'Playground', 3: 'Salão Gourmet', 4: 'Solário', 5: 'Brinquedoteca', 6: 'Churrascaria', 7: 'Garagem', 8: 'Espaço Esportivo', 9: 'Piscina Infantil e Adulta', 10: 'Vestiários', 11: 'Academia', 12: 'Pet Plat'}
-        for caption, index in qtd
-          .column.is-2
-            figure.has-text-centered
-              img(src="assets/images/ICONE-"+index+".png", alt="")
-              figcaption
-                =caption
+  .container
+    .columns
+      .column.is-offset-1.is-4
+        h2.title Lazer
+        .side-list-simple
+          ul
+            li Varanda Gourmet
+            li Playground
+            li Salão Gourmet
+            li Solário
+            li Brinquedoteca
+
+          ul
+            li Varanda Gourmet
+            li Playground
+            li Salão Gourmet
+            li Solário
+            li Brinquedoteca
+      .column.is-6
+        h2.title Ficha técnica
+        .side-list
+          div
+            h3 Empreendimento:
+            p Edificio Estância
+
+            h3 Endereço:
+            p Rua Prefeito Francisco Rodrigues Filho,
+              br
+              | nº 323, Centro – Poá – SP
+
+            h3 Incorporação:
+            p Estância Poá Empreendimento Imobiliário
+              br
+              | SPE LTDA
+
+            h3 Previsão do término:
+            p Julho de 2021
+          div
+            h3 Área de terreno:
+            p 2.880m²
+
+            h3 Áreas:
+            ul
+              li Apartamento 2 dormitórios 63,49 m² privativa
+              li Apartamentos 3 dormitórios 70,25m² privativa
+              li Numero de torres: 1
+              li Total de Unidades: 120
+              li Vagas de garagem: 1 ou 2 vagas por unidade
+              li Numero de elevadores: 3
+              li Andares : 15 andares, terreo e dois subsolos
+              li Apartamentos por andar: 8

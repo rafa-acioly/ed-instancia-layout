@@ -1,0 +1,49 @@
+#resources {
+
+  .container {
+    h2.title {
+      font-family: 'hk_grotesklight', sans-serif;
+      text-transform: uppercase;
+      color: $light-green;
+    }
+
+    .side-list-simple {
+      display: flex;
+
+      ul {
+
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+        li {
+          margin: 10px 0;
+          font-family: 'hk_grotesklight', sans-serif;
+          color: $dark-blue;
+        }
+      }
+    }
+
+    .side-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+
+      h3 {
+        color: $deep-blue;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        & + p:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      p, ul > li {
+        font-family: 'hk_grotesklight', sans-serif;
+        color: $dark-blue;
+      }
+    }
+  }
+}
