@@ -24,9 +24,9 @@ $(document).ready(function () {
 
   $('.logo-float .fa').on('click', function() {
     const $this = $(this);
-    let classe = $(this).hasClass('fa-close');
+    var $hasClass = $(this).hasClass('fa-close');
     $('.logo-float img, .logo-float p').fadeToggle('fast', function () {
-      $this.toggleClass('fa-angle-left', classe).toggleClass('fa-close', !classe);
+      $this.toggleClass('fa-angle-left', $hasClass).toggleClass('fa-close', !$hasClass);
     });
   });
   
