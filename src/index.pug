@@ -1,6 +1,6 @@
 extends layouts/app
 block content
-  .logo-float
+  .logo-float.is-hidden-mobile
     img(src="http://placehold.it/150x150", alt="logotipo perez imóveis")
     p
       a(href="tel:+551146349300") 11 4634.9300
@@ -11,11 +11,11 @@ block content
           .navbar-brand
             a(href="/").navbar-item
               img(src="assets/images/nav-logo.png", alt="logotipo")
-            .navbar-burger
+            .navbar-burger.burger(data-target="navMenuTransparentExample")
               span
               span
               span
-          .navbar-end
+          .navbar-end#navMenuTransparentExample.navbar-menu
             a.navbar-item(href="") Lazer
             a.navbar-item(href="") Ficha técnica
             a.navbar-item(href="") Galeria
@@ -25,7 +25,7 @@ block content
               
     .main-banner
         .columns.main-columns
-          .column
+          .column.is-hidden-mobile
           .column.has-text-centered
              h2.subtitle.is-super Excelente para investir,
               h1.title.is-super Perfeito para morar
