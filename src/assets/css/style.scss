@@ -56,7 +56,7 @@ figure {
   position: fixed;
   padding: 15px;
   z-index: 11;
-  right: 7px;
+  right: 0;
   top: 8vh;
   cursor: pointer;
   text-align: center;
@@ -73,10 +73,10 @@ figure {
 
   .navbar-brand {
     height: 4.25rem;
+  }
 
-    .burger {
-      height: 4.25rem;
-    }
+  .burger {
+    height: 4.25rem;
   }
 
   .navbar-item {
@@ -102,19 +102,27 @@ figure {
 
     .main-columns {
       margin-bottom: 0;
-      min-height: calc(100vh - 3.25rem);
+      margin-top: 0;
+      min-height: calc(100vh - 4.75rem);
 
       .column:last-child {
         display: flex;
         justify-content: center;
         flex-direction: column;
         background-color: $dark-blue;
+        border-left: 10px solid #3b9286;
       }
 
       .column:first-child {
         background: url('../images/banner-principal.png') no-repeat center;
       }
     }
+  }
+
+  .hero-foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 

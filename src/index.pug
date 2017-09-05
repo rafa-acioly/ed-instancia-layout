@@ -1,7 +1,7 @@
 extends layouts/app
 block content
   .logo-float.is-hidden-mobile
-    img(src="http://placehold.it/150x150", alt="logotipo perez imóveis")
+    img(src="assets/images/LOGO_PEREZ_IMOVEIS.jpg", alt="logotipo perez imóveis")
     p
       a(href="tel:+551146349300") 11 4634.9300
   .hero.is-fullheight#main
@@ -11,27 +11,37 @@ block content
           .navbar-brand
             a(href="/").navbar-item
               img(src="assets/images/nav-logo.png", alt="logotipo")
-            .navbar-burger.burger(data-target="navMenuTransparentExample")
-              span
-              span
-              span
-          .navbar-end#navMenuTransparentExample.navbar-menu
-            a.navbar-item(href="") Lazer
-            a.navbar-item(href="") Ficha técnica
-            a.navbar-item(href="") Galeria
-            a.navbar-item(href="") Localização
-            a.navbar-item(href="") Plantas
-            a.navbar-item(href="") Fale com o corretor
+          .navbar-burger.burger(data-target="navMenuTransparent")
+            span
+            span
+            span
+          .navbar-menu.is-hidden-mobile
+            .navbar-end
+              a.navbar-item(href="") Lazer
+              a.navbar-item(href="") Ficha técnica
+              a.navbar-item(href="") Galeria
+              a.navbar-item(href="") Localização
+              a.navbar-item(href="") Plantas
+              a.navbar-item(href="") Fale com o corretor
+
+      .navbar-menu#navMenuTransparent.is-hidden-desktop
+            .navbar-end
+              a.navbar-item(href="") Lazer
+              a.navbar-item(href="") Ficha técnica
+              a.navbar-item(href="") Galeria
+              a.navbar-item(href="") Localização
+              a.navbar-item(href="") Plantas
+              a.navbar-item(href="") Fale com o corretor
               
     .main-banner
-        .columns.main-columns
-          .column.is-hidden-mobile
-          .column.has-text-centered
-             h2.subtitle.is-super Excelente para investir,
-              h1.title.is-super Perfeito para morar
-    //- .hero-foot.has-text-centered
-    //-   .scroll-down
-    //-     img(src="assets/images/mouse.png", alt="view more")
+      .columns.main-columns
+        .column.is-hidden-mobile
+        .column.has-text-centered
+            h2.subtitle.is-super Excelente para investir,
+            h1.title.is-super Perfeito para morar
+      .hero-foot.has-text-centered.is-hidden-mobile
+        .scroll-down
+          img(src="assets/images/mouse.png", alt="view more")
   
   include sections/resources
 
