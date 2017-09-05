@@ -1,26 +1,21 @@
 .hero#location
   .columns.is-gapless
     .column
-      .tabs.is-right.is-boxed
+      .tabs.is-left.is-boxed
         ul
-          li(data-tab="1").is-active.has-text-right
+          li.is-active.has-text-right
             h1.title.is-4 2 Dormitórios
             h2.subtitle 63,
               .sup 49m²
-          li(data-tab="2").has-text-right
+      .tabs-content.has-text-centered.has-text-centered
+        img(src="assets/images/3-dormitorios.png", alt="ilustracao planta imovel 3 dormitórios").image
+        
+    .column
+      .tabs.is-left.is-boxed
+        ul
+          li.has-text-right.is-active
             h1.title.is-4 3 Dormitórios
             h2.subtitle.is-5 70,
               .sup 25m²
-      .tabs-content.has-text-centered
-        p(data-content="1")
-          img(src="assets/images/2-dormitorios.png", alt=" ilustraçã planta imovel 2 dormitórios").image
-          button.button.is-info
-            span.icon
-              i.fa.fa-search-plus
-        p(data-content="2").is-hidden
-          img(src="assets/images/3-dormitorios.png", alt="ilustracao planta imovel 3 dormitórios").image
-          button.button.is-info
-            span.icon
-              i.fa.fa-search-plus
-    .column
-      #map
+      .tabs-content.has-text-centered.has-text-centered
+        img(src="assets/images/2-dormitorios.png", alt=" ilustraçã planta imovel 2 dormitórios").image

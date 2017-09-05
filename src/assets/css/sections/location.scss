@@ -2,15 +2,13 @@
 
   .columns {
 
-    .column:first-child {
+    .column {
       padding: 2rem;
 
       .tabs-content {
 
-        .button {
-          border-radius: 100px;
-          background-color: $blue;
-          margin-top: 1rem;
+        img {
+          margin: 0 auto;
         }
       }
 
@@ -47,13 +45,6 @@
 
             .subtitle {
               color: #66b0a3;
-            }
-          }
-
-          li:not(.is-active) {
-
-            .title, .subtitle {
-              color: transparentize($light-gray, 0.1);
             }
           }
         }
